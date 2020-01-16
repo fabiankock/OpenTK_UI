@@ -14,16 +14,17 @@ namespace OpenTKGui.Model
         public float ScreenWidth { get; set; }
 
         private Slider slider;
-        private Button button;
+        private Button button1, button2;
         private CheckBox checkBox;
 
         public UIModel(int screenWidth, int screenHeight)
         {
             _entities = new List<IGUIEntity>();
 
-            slider = new Slider(new Vector2(0.0f, 0.0f), new Vector2(1.5f, 0.2f), Color.Transparent);
-            button = new Button(new Vector2(0.0f, 0.3f), new Vector2(1f, 0.2f), Color.Transparent);
-            checkBox = new CheckBox(new Vector2(0.0f, -0.3f), new Vector2(0.2f, 0.2f), Color.Transparent);
+            slider = new Slider(new Vector2(0.0f, 0.3f), new Vector2(1.5f, 0.2f), Color.Transparent);
+            button1 = new Button(new Vector2(0.0f, 0.0f), new Vector2(1f, 0.2f), Color.Transparent);
+            button2 = new Button(new Vector2(0.0f, -0.3f), new Vector2(1f, 0.2f), Color.Transparent);
+            checkBox = new CheckBox(new Vector2(0.0f, -0.6f), new Vector2(0.2f, 0.2f), Color.Transparent);
 
             _entities.Add(slider);
             _entities.Add(slider.Slider_Head);
@@ -31,7 +32,8 @@ namespace OpenTKGui.Model
             _entities.Add(checkBox);
             _entities.Add(checkBox.CheckBoxTick);
 
-            _entities.Add(button);
+            _entities.Add(button1);
+            _entities.Add(button2);
 
             ScreenHeight = screenHeight;
             ScreenWidth = screenWidth;
@@ -46,8 +48,11 @@ namespace OpenTKGui.Model
                 if (checkBox.Active)
                     System.Console.WriteLine(slider.Value);
 
-                if (button.ButtonClicked == true && entity is Button)
+                if (button1.ButtonClicked == true && entity.Equals(button1))
                     System.Console.WriteLine(slider.Value);
+
+                if (button2.ButtonClicked == true && entity.Equals(button2))
+                    System.Console.WriteLine(slider.Value * 100);
             }
         }
     }

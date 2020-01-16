@@ -21,7 +21,7 @@ namespace OpenTKGui.Model
         {
             _entities = new List<IGUIEntity>();
 
-            slider = new Slider(new Vector2(0.0f, 0.0f), new Vector2(1f, 0.2f), Color.Transparent);
+            slider = new Slider(new Vector2(0.0f, 0.0f), new Vector2(1.5f, 0.2f), Color.Transparent);
             button = new Button(new Vector2(0.0f, 0.3f), new Vector2(1f, 0.2f), Color.Transparent);
             checkBox = new CheckBox(new Vector2(0.0f, -0.3f), new Vector2(0.2f, 0.2f), Color.Transparent);
 

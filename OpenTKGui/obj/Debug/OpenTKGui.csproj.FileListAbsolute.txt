@@ -27,3 +27,4 @@ C:\Users\FKock\source\repos\OpenTKGui\OpenTK_UI\OpenTKGui\obj\Debug\OpenTKGui.cs
 C:\Users\FKock\source\repos\OpenTKGui\OpenTK_UI\OpenTKGui\obj\Debug\OpenTKGui.csproj.CopyComplete
 C:\Users\FKock\source\repos\OpenTKGui\OpenTK_UI\OpenTKGui\obj\Debug\OpenTKGui.exe
 C:\Users\FKock\source\repos\OpenTKGui\OpenTK_UI\OpenTKGui\obj\Debug\OpenTKGui.pdb
+C:\Users\FKock\source\repos\OpenTKGui\OpenTK_UI\OpenTKGui\obj\Debug\OpenTKGui.csprojAssemblyReference.cache

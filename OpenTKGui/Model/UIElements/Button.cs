@@ -44,7 +44,6 @@ namespace OpenTKGui.Model.UIElements
 
                 if (btnRect.IntersectsWith(mouseRect))
                 {
-                    //System.Console.WriteLine("Button clicked");
                     _buttonClicked = true;
                 }
             }

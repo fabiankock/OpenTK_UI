@@ -38,7 +38,7 @@ namespace OpenTKGui.Model.UIElements
                 Slider_Head.Position = new Vector2(Position.X + (Size.X / 2), Slider_Head.Position.Y);
             }
 
-            Value = Slider_Head.Position.X - left.X;
+            Value = (Slider_Head.Position.X - left.X) / Size.X;
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTKGui.exe.config
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTKGui.exe
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTKGui.pdb
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTK.dll
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTK.pdb
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\OpenTK.xml
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.csprojAssemblyReference.cache
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.csproj.CoreCompileInputs.cache
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.csproj.CopyComplete
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.exe
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.pdb
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.Resource.resources
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\obj\Debug\OpenTKGui.csproj.GenerateResource.cache
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\Resource.resx
+C:\Users\FKock\source\repos\OpenTKGui\OpenTKGui\bin\Debug\Resource.Designer.cs

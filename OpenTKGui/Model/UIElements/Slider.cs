@@ -15,7 +15,6 @@ namespace OpenTKGui.Model.UIElements
         private Bitmap Tex;
         public SliderHead Slider_Head { get; set; }
         public float Value { get; set; }
-        public bool checkboxTicked { get; set; }
         public Slider(Vector2 pos, Vector2 size, Color col)
         {
             Color = col;
@@ -25,7 +24,6 @@ namespace OpenTKGui.Model.UIElements
             Slider_Head = new SliderHead(pos, new Vector2(size.X / 6, size.Y), col, this);
             Slider_Head.Position = Position + (new Vector2(-Size.X / 2, 0));
             Value = 0.0f;
-            checkboxTicked = false;
 
             glTex = TextureHelper.CreateTexture("s_body");
         }
@@ -44,9 +42,6 @@ namespace OpenTKGui.Model.UIElements
             }
 
             Value = Slider_Head.Position.X - left.X;
-
-            if (checkboxTicked)
-                System.Console.WriteLine(Value);
         }
     }
 }

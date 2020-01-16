@@ -11,6 +11,8 @@ namespace OpenTKGui.Model.UIElements
         public int glTex { get; set; }
 
         public CheckBoxTick CheckBoxTick { get; }
+        public bool Active => CheckBoxTick.Activated;
+
         private bool leftClickedLastFrame;
         public CheckBox(Vector2 pos, Vector2 size, Color col)
         {

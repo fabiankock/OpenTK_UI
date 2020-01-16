@@ -8,7 +8,7 @@ namespace OpenTKGui.Model.UIElements
         public Color Color { get; }
         public Vector2 Position { get; set; }
         public Vector2 Size { get; set; }
-        public int glTex { get; set; }
+        public int GLTex { get; set; }
 
         public CheckBoxTick CheckBoxTick { get; }
         public bool Active => CheckBoxTick.Activated;
@@ -20,7 +20,7 @@ namespace OpenTKGui.Model.UIElements
             Position = pos;
             Size = size;
 
-            glTex = TextureHelper.CreateTexture("check_box");
+            GLTex = TextureHelper.CreateTexture("check_box");
             leftClickedLastFrame = false;
             CheckBoxTick = new CheckBoxTick(pos, size, col);
         }

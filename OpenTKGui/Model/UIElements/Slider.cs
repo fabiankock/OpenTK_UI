@@ -1,7 +1,5 @@
 ﻿using System.Drawing;
-using System.Linq;
 using OpenTK;
-using System.Collections.Generic;
 
 namespace OpenTKGui.Model.UIElements
 {
@@ -10,9 +8,8 @@ namespace OpenTKGui.Model.UIElements
         public Color Color { get; set; }
         public Vector2 Position { get; set; }
         public Vector2 Size { get; set; }
-        public int glTex { get; set; }
+        public int GLTex { get; set; }
 
-        private Bitmap Tex;
         public SliderHead Slider_Head { get; set; }
         public float Value { get; set; }
         public Slider(Vector2 pos, Vector2 size, Color col)
@@ -25,7 +22,7 @@ namespace OpenTKGui.Model.UIElements
             Slider_Head.Position = Position + (new Vector2(-Size.X / 2, 0));
             Value = 0.0f;
 
-            glTex = TextureHelper.CreateTexture("s_body");
+            GLTex = TextureHelper.CreateTexture("s_body");
         }
 
         public void Update(float deltaTime, Point mousePosition, float screenWidth, float screenHeight, bool leftClicked)

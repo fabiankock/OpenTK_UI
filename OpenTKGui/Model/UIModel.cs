@@ -1,6 +1,5 @@
 ﻿using OpenTK;
 using System.Drawing;
-using System.Linq;
 using System.Collections.Generic;
 using OpenTKGui.Model.UIElements;
 
@@ -45,6 +44,9 @@ namespace OpenTKGui.Model
                 entity.Update(deltaTime, mousePosition, ScreenWidth, ScreenHeight, leftClicked);
 
                 if (checkBox.Active)
+                    System.Console.WriteLine(slider.Value);
+
+                if (button.ButtonClicked == true && entity is Button)
                     System.Console.WriteLine(slider.Value);
             }
         }

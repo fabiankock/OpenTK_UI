@@ -10,9 +10,11 @@ namespace OpenTKGui.Model.UIElements
         public Vector2 Position { get; set; }
         public Vector2 Size { get; set; }
         public Color Color { get; set; }
-        public int glTex { get; set; }
+        public int GLTex { get; set; }
 
         private bool leftClickedLastFrame;
+        private bool _buttonClicked;
+        public bool ButtonClicked { get => _buttonClicked; }
 
         public Button(Vector2 pos, Vector2 size, Color color)
         {
@@ -20,12 +22,15 @@ namespace OpenTKGui.Model.UIElements
             this.Size = size;
             this.Color = color;
 
-            glTex = TextureHelper.CreateTexture("Button");
+            GLTex = TextureHelper.CreateTexture("Button");
             leftClickedLastFrame = false;
         }
 
         public void Update(float deltaTime, Point mousePosition, float screenWidth, float screenHeight, bool leftClicked)
         {
+            if (leftClickedLastFrame == true)
+                _buttonClicked = false;
+
             if (leftClicked && !leftClickedLastFrame)
             {
                 //Get upper left point of button
@@ -39,7 +44,8 @@ namespace OpenTKGui.Model.UIElements
 
                 if (btnRect.IntersectsWith(mouseRect))
                 {
-                    System.Console.WriteLine("Button clicked");
+                    //System.Console.WriteLine("Button clicked");
+                    _buttonClicked = true;
                 }
             }
             leftClickedLastFrame = leftClicked;

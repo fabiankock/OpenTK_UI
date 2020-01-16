@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
 using OpenTK;
 
 namespace OpenTKGui.Model.UIElements
@@ -10,7 +8,7 @@ namespace OpenTKGui.Model.UIElements
         public Color Color { get; set; }
         public Vector2 Position { get; set; }
         public Vector2 Size { get; set; }
-        public int glTex { get; set; }
+        public int GLTex { get; set; }
 
         public SliderHead(Vector2 pos, Vector2 size, Color col, IGUIEntity parent)
         {
@@ -18,7 +16,7 @@ namespace OpenTKGui.Model.UIElements
             Position = pos;
             Size = size;
 
-            glTex = TextureHelper.CreateTexture("s_head");
+            GLTex = TextureHelper.CreateTexture("s_head");
         }
 
         public void Update(float deltaTime, Point mousePosition, float screenWidth, float screenHeight, bool leftClicked)

@@ -8,7 +8,7 @@ namespace OpenTKGui.Model.UIElements
         public Color Color { get; }
         public Vector2 Position { get; set; }
         public Vector2 Size { get; set; }
-        public int glTex { get; set; }
+        public int GLTex { get; set; }
         public bool Activated { get; set; }
 
         private Vector2 inital_pos;
@@ -18,7 +18,7 @@ namespace OpenTKGui.Model.UIElements
             Position = pos;
             Size = size;
 
-            glTex = TextureHelper.CreateTexture("check_tick");
+            GLTex = TextureHelper.CreateTexture("check_tick");
             Activated = false;
             inital_pos = pos;
         }

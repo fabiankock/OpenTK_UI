@@ -25,7 +25,7 @@ namespace OpenTKGui.View
             GL.Enable(EnableCap.Texture2D);
             GL.Enable(EnableCap.Blend);
             GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
-            GL.BindTexture(TextureTarget.Texture2D, entity.glTex);
+            GL.BindTexture(TextureTarget.Texture2D, entity.GLTex);
 
             GL.Begin(PrimitiveType.Quads);
 

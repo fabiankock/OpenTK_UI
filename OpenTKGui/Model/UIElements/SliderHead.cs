@@ -25,7 +25,7 @@ namespace OpenTKGui.Model.UIElements
             {
                 //Get upper left point of sliderHead
                 Point headCoords = CoordinateTransformation.GL_to_Screen_Coords(Position + new Vector2(-Size.X / 2, Size.Y / 2), screenWidth, screenHeight);
-                //Get button size
+                //Get sliderHead size
                 Point headSize = CoordinateTransformation.GL_Size_To_Screen_Size(Size, screenWidth, screenHeight);
 
                 //Make rectangles relative to screen to check for intersection

@@ -22,10 +22,13 @@ namespace OpenTKGui.View
         private void RenderEntity(IGUIEntity entity)
         {
             GL.LoadIdentity();
-            GL.Enable(EnableCap.Texture2D);
-            GL.Enable(EnableCap.Blend);
-            GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
-            GL.BindTexture(TextureTarget.Texture2D, entity.GLTex);
+            if (entity.GLTex != -1)
+            {
+                GL.Enable(EnableCap.Texture2D);
+                GL.Enable(EnableCap.Blend);
+                GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
+                GL.BindTexture(TextureTarget.Texture2D, entity.GLTex);
+            }
 
             GL.Begin(PrimitiveType.Quads);
 
@@ -41,8 +44,11 @@ namespace OpenTKGui.View
 
             GL.End();
 
-            GL.Disable(EnableCap.Texture2D);
-            GL.Disable(EnableCap.Blend);
+            if (entity.GLTex != -1)
+            {
+                GL.Disable(EnableCap.Texture2D);
+                GL.Disable(EnableCap.Blend);
+            }
         }
     }
 }
